@@ -4,3 +4,13 @@ metadata:
   name: JCAL0199
 spec:
   memberOf: [admin]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: cesar01_99
+spec:
+  profile:
+    displayName: Julio Cesar
+    email: cesar01_99@hotmail.com
+  memberOf: [guest]
