@@ -16,6 +16,18 @@ metadata:
     gitlab.com/username: cesar01_99
 spec:
   profile:
-    displayName: Julio Cesar
+    displayName: Julio Cesar Gitlab 1
+    email: cesar01_99@hotmail.com
+  memberOf: [team-a]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: jcalcloud01
+  annotations:
+    gitlab.com/username: cesar01_99
+spec:
+  profile:
+    displayName: Julio Cesar Gitlab 2
     email: jcalcloud01@gmail.com
-  memberOf: [guest]
+  memberOf: [team-b]
