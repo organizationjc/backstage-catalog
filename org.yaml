@@ -3,6 +3,8 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: JCAL0199
+  annotations:
+    github.com/username: cesar01_99
 spec:
   memberOf: [admin]
 ---
@@ -10,6 +12,8 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: cesar01_99
+  annotations:
+    gitlab.com/username: cesar01_99
 spec:
   profile:
     displayName: Julio Cesar
