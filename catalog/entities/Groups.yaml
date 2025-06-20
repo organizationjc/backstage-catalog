@@ -1,0 +1,36 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: developers
+  description: Equipo de desarrolladores
+spec:
+  type: team
+  children: []
+  profile:
+    displayName: Developers
+    email: developers@company1.mx
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: maria-azucena-perez
+  description: Maria Azucena Perez
+spec:
+  type: team
+  children: []
+  profile:
+    displayName: Maria Azucena Perez
+    email: maria.perez@company1.mx
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: juan-manuel-perez
+  description: Juan Manuel Perez
+spec:
+  type: team
+  children: []
+  profile:
+    displayName: Juan Manuel Perez
+    email: juan.perez@company1.mx

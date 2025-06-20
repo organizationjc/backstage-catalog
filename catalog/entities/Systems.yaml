@@ -1,7 +1,8 @@
+---
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: bdnsar
   description: Sistema para la integración con BDNSAR
 spec:
-  owner: group:default/architecture-team
+  owner: group:default/developers

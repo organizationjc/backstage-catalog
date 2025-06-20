@@ -38,7 +38,7 @@ metadata:
     endpoints/prod: https://api.company1.mx/company/1/nci-bdnsarintegrationaccountsmovements
 spec:
   type: service
-  owner: Juan Manuel Perez
+  owner: group:default/juan-manuel-perez
   lifecycle: production
   system: bdnsar
 ---
@@ -60,7 +60,7 @@ metadata:
     endpoints/prod: https://api.company1.mx/company/1/nci-bdnsarintegrationmanagement
 spec:
   type: service
-  owner: Juan Manuel Perez
+  owner: group:default/juan-manuel-perez
   lifecycle: production
   system: bdnsar
 ---
@@ -82,7 +82,7 @@ metadata:
     endpoints/prod: https://api.company1.mx/company/1/nci-bdnsardintegrationprocesscontrolnumbers
 spec:
   type: service
-  owner: Juan Manuel Perez
+  owner: group:default/juan-manuel-perez
   lifecycle: production
   system: bdnsar
 ---
@@ -104,7 +104,7 @@ metadata:
     endpoints/prod: https://api.company1.mx/company/1/nci-bdnsardataintegration
 spec:
   type: service
-  owner: Juan Manuel Perez
+  owner: group:default/juan-manuel-perez
   lifecycle: production
   system: bdnsar
 ---
@@ -126,7 +126,7 @@ metadata:
     endpoints/prod: https://api.company1.mx/company/1/nci-bdnsarintegrationcoexistencemanagment
 spec:
   type: service
-  owner: Juan Manuel Perez
+  owner: group:default/juan-manuel-perez
   lifecycle: production
   system: bdnsar
 ---
@@ -148,6 +148,6 @@ metadata:
     endpoints/prod: https://api.company1.mx/company/1/nci-bdnsarintegrationutils
 spec:
   type: service
-  owner: Juan Manuel Perez
+  owner: group:default/juan-manuel-perez
   lifecycle: production
   system: bdnsar
