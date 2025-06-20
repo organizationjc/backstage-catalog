@@ -1,0 +1,153 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: integrationprocess
+  description: Servicio que expone los controles para ejecutar los procesos de integración con la BDNSAR bajo demanda.
+  tags:
+    - microservice
+  links:
+    - url: https://github.com/company1-company/ms-nci-bdnsarintegrationprocess
+      title: Repository
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    endpoints/dev: https://api.dev.company1.mx/company/1/nci-bdnsarintegrationprocess
+    endpoints/qa: https://api.qa.company1.mx/company/1/nci-bdnsarintegrationprocess
+    endpoints/prod: https://api.company1.mx/company/1/nci-bdnsarintegrationprocess
+spec:
+  type: service
+  owner: group:default/maria-azucena-perez
+  lifecycle: production
+  system: bdnsar
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: integrationaccountsmovements
+  description: "Microservicios para la consulta de los movimientos generados durante el proceso de DO IMSS y componentes complementarios como: Monitoreo Acreditación, Microservicio Movimientos Previos, Microservicio de Reporte Acreditación."
+  tags:
+    - microservice
+    - financial
+  links:
+    - url: https://github.com/company1-company/ms-nci-bdnsarintegrationaccountsmovements
+      title: Repository
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    endpoints/dev: https://api.dev.company1.mx/company/1/nci-bdnsarintegrationaccountsmovements
+    endpoints/qa: https://api.qa.company1.mx/company/1/nci-bdnsarintegrationaccountsmovements
+    endpoints/prod: https://api.company1.mx/company/1/nci-bdnsarintegrationaccountsmovements
+spec:
+  type: service
+  owner: Juan Manuel Perez
+  lifecycle: production
+  system: bdnsar
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: integrationmanagement
+  description: Microservicios para la persistencia y administración de la bitácora de procesos/Servicios para registrar y consultar la bitácora desde cualquier subetapa de los trámites y los servicios para la generación y persistencia de los folios.
+  tags:
+    - microservice
+    - logging
+  links:
+    - url: https://github.com/company1-company/ms-nci-bdnsarintegrationmanagement
+      title: Repository
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    endpoints/dev: https://api.dev.company1.mx/company/1/nci-bdnsarintegrationmanagement
+    endpoints/qa: https://api.qa.company1.mx/company/1/nci-bdnsarintegrationmanagement
+    endpoints/prod: https://api.company1.mx/company/1/nci-bdnsarintegrationmanagement
+spec:
+  type: service
+  owner: Juan Manuel Perez
+  lifecycle: production
+  system: bdnsar
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: integrationprocesscontrolnumbers
+  description: Microservicios para la pantalla Cifras Control Históricas de DO IMSS/Microservicios para la gestión de los indicadores configurados por cuenta individual.
+  tags:
+    - microservice
+    - reporting
+  links:
+    - url: https://github.com/company1-company/ms-nci-bdnsardintegrationprocesscontrolnumbers
+      title: Repository
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    endpoints/dev: https://api.dev.company1.mx/company/1/nci-bdnsardintegrationprocesscontrolnumbers
+    endpoints/qa: https://api.qa.company1.mx/company/1/nci-bdnsardintegrationprocesscontrolnumbers
+    endpoints/prod: https://api.company1.mx/company/1/nci-bdnsardintegrationprocesscontrolnumbers
+spec:
+  type: service
+  owner: Juan Manuel Perez
+  lifecycle: production
+  system: bdnsar
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: dataintegration
+  description: Servicio que se encarga de gestionar los elementos que interactúan relacionados a los datos provenientes de la BDNSAR. La gestión de los archivos consulta de saldos y los resultados de las validaciones de estructura y contenido.
+  tags:
+    - microservice
+    - data
+  links:
+    - url: https://github.com/company1-company/ms-nci-bdnsardataintegration
+      title: Repository
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    endpoints/dev: https://api.dev.company1.mx/company/1/nci-bdnsardataintegration
+    endpoints/qa: https://api.qa.company1.mx/company/1/nci-bdnsardataintegration
+    endpoints/prod: https://api.company1.mx/company/1/nci-bdnsardataintegration
+spec:
+  type: service
+  owner: Juan Manuel Perez
+  lifecycle: production
+  system: bdnsar
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: integrationcoexistencemanagment
+  description: Microservicios para la consulta del permiso de la información del cliente/Microservicio Mapa Referencias/Microservicios para la configuración general de matriz de convivencia.
+  tags:
+    - microservice
+    - permissions
+  links:
+    - url: https://github.com/company1-company/ms-nci-bdnsarintegrationcoexistencemanagment
+      title: Repository
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    endpoints/dev: https://api.dev.company1.mx/company/1/nci-bdnsarintegrationcoexistencemanagment
+    endpoints/qa: https://api.qa.company1.mx/company/1/nci-bdnsarintegrationcoexistencemanagment
+    endpoints/prod: https://api.company1.mx/company/1/nci-bdnsarintegrationcoexistencemanagment
+spec:
+  type: service
+  owner: Juan Manuel Perez
+  lifecycle: production
+  system: bdnsar
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: integrationutils
+  description: Servicio que provee de utilerías requeridas para la interpretación de información como catálogos, relaciones entre fuentes de información o notificaciones, requeridas durante los procesos de integración con la BDNSAR.
+  tags:
+    - microservice
+    - utilities
+  links:
+    - url: https://github.com/company1-company/ms-nci-bdnsarintegrationutils
+      title: Repository
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    endpoints/dev: https://api.dev.company1.mx/company/1/nci-bdnsarintegrationutils
+    endpoints/qa: https://api.qa.company1.mx/company/1/nci-bdnsarintegrationutils
+    endpoints/prod: https://api.company1.mx/company/1/nci-bdnsarintegrationutils
+spec:
+  type: service
+  owner: Juan Manuel Perez
+  lifecycle: production
+  system: bdnsar

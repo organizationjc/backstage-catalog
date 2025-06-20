@@ -1,0 +1,25 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: maria-azucena-perez
+spec:
+  memberOf: [group:default/developers]
+  profile:
+    displayName: Maria Azucena Perez
+    email: maria.perez@company1.mx
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: juan-manuel-perez
+  description: Grupo para Juan Manuel Perez
+  tags:
+    - developer
+    - microservices
+spec:
+  type: team
+  children: []
+  profile:
+    displayName: Juan Manuel Perez
+    email: juan.manuel.perez@company1.mx
