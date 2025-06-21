@@ -134,7 +134,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: integrationutils
-  description: Servicio que provee de utilerías requeridas para la interpretación de información como catálogos, relaciones entre fuentes de información o notificaciones, requeridas durante los procesos de integración con la BDNSAR.
+  description: Servicio que provee de utilerías requeridas para la interpretación de información como catálogos, relaciones entre fuentes de información o notificaciones, requeridas durante los procesos de integración con la BDNSAR
   tags:
     - microservice
     - utilities
