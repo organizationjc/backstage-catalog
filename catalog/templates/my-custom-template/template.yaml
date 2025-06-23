@@ -39,7 +39,8 @@ spec:
       input:
         allowedHosts: ['github.com']
         description: 'This is ${{ parameters.name }}'
-        repoUrl: github.com?repo=${{ parameters.name | lower | replace(" ", "-") | normalize }}-${{ uuid | slice(0, 6) }}&owner=organizationjc
+        repoUrl: >-
+          github.com?repo=${{ parameters.name | lower | replace(" ", "-") | normalize }}-${{ uuid | slice(0, 6) }}&owner=organizationjc
 
   output:
     links:
