@@ -1,7 +1,7 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: Template para registrar una Sub Etapa
+  name: Template-Para-Registro-Sub-Etapa
   title: Registro de Sub Etapa
   description: Crea una Sub Etapa para enlazar con un componente técnico comun
   tags:
