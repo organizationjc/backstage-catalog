@@ -1,7 +1,7 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: my-custom-template
+  name: Template para registrar una Sub Etapa
   title: Registro de Sub Etapa
   description: Crea una Sub Etapa para enlazar con un componente técnico comun
   tags:
@@ -39,7 +39,7 @@ spec:
       input:
         allowedHosts: ['github.com']
         description: 'This is ${{ parameters.name }}'
-        repoUrl: https://github.com/organizationjc/backstage-catalog/blob/main/catalog/templates/my-custom-template/template.yaml
+        repoUrl: ${{ parameters.repoUrl }}
 
   output:
     links:
