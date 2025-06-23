@@ -23,6 +23,13 @@ spec:
           ui:autofocus: true
           ui:options:
             rows: 5
+        repoUrl:
+          title: Repositorio de destino
+          type: string
+          description: Dirección del repositorio (generada automáticamente)
+          default: >-
+            github.com?repo=${{ parameters.name | lower | replace(' ', '-') | normalize }}&owner=organizationjc
+          ui:widget: hidden
 
   steps:
     - id: fetch-base
