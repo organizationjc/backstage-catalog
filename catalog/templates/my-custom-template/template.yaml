@@ -5,8 +5,8 @@ metadata:
   title: Registro de Sub Etapa
   description: Crea una Sub Etapa para enlazar con un componente técnico comun
   tags:
-    - Sub Etapa
-    - Componente Comun
+    - Sub-Etapa
+    - Componente-Comun
 spec:
   owner: group:default/juan-manuel-perez
   type: service
