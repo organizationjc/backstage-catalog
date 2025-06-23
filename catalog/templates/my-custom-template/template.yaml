@@ -25,6 +25,14 @@ spec:
             rows: 5
 
   steps:
+    - id: generate-values
+      name: Generar valores
+      action: debug:log
+      input:
+        message: "Generando repoUrl"
+      output:
+        repoName: ${{ parameters.name | lower | replace(' ', '-') | normalize }}-${{ uuid | slice(0, 6) }}
+
     - id: fetch-base
       name: Fetch Base
       action: fetch:template
@@ -40,7 +48,7 @@ spec:
         allowedHosts: ['github.com']
         description: 'This is ${{ parameters.name }}'
         repoUrl: >-
-          github.com?repo=${{ parameters.name | lower | replace(' ', '-') | normalize }}-${{ uuid | slice(0, 6) }}&owner=organizationjc
+          github.com?repo=${{ steps.generate-values.output.repoName }}&owner=organizationjc
 
   output:
     links:
