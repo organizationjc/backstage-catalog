@@ -2,24 +2,24 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: my-custom-template
-  title: My Custom Template
-  description: Creates a new service with my custom configuration
+  title: Registro de Sub Etapa
+  description: Crea una Sub Etapa para enlazar con un componente técnico comun
   tags:
-    - node
-    - web
+    - Sub Etapa
+    - Componente Comun
 spec:
-  owner: user:default/my-user
+  owner: group:default/juan-manuel-perez
   type: service
 
   parameters:
-    - title: Fill in some steps
+    - title: Nombre de la Sub Etapa
       required:
         - name
       properties:
         name:
-          title: Name
+          title: Nombre
           type: string
-          description: Unique name of the component
+          description: Nombre unico de la Sub Etapa
           ui:autofocus: true
           ui:options:
             rows: 5
@@ -39,7 +39,7 @@ spec:
       input:
         allowedHosts: ['github.com']
         description: 'This is ${{ parameters.name }}'
-        repoUrl: ${{ parameters.repoUrl }}
+        repoUrl: https://github.com/organizationjc/backstage-catalog/blob/main/catalog/templates/my-custom-template/template.yaml
 
   output:
     links:
