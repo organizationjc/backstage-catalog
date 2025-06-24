@@ -129,6 +129,7 @@ spec:
   owner: group:default/juan-manuel-perez
   lifecycle: production
   system: bdnsar
+  subcomponentOf: component:default/integrationutils
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
