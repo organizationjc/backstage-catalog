@@ -2,6 +2,18 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
+  name: admin
+  description: Equipo de desarrolladores
+spec:
+  type: team
+  children: []
+  profile:
+    displayName: Admin
+    email: admin@company1.mx
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
   name: developers
   description: Equipo de desarrolladores
 spec:
